@@ -10,11 +10,12 @@ Use an app like Notepad++ to edit the file.
 
 Copy and paste a section like:
 
-elif [[ "$ROM_NAME" == *"Black"* ]]; then
-      echo "Pokemon Red" >> "$LOG"
-		knulli-rgb-led-daemon set 10 10 10	
+```
+        elif [[ "$ROM_NAME" == *"Black"* ]]; then
+                echo "Pokemon Black" >> "$LOG"
+                knulli-rgb-led-daemon set 10 10 10
+```
 
-
-and just change what is between the "" e.g. "Black" to whatever KEYWORD is in your ROM filename.
+and just change what is between the "" e.g. "Black" to whatever KEYWORD is in your ROM filename and the 10 10 10 (RGB) values to whatever you want. Its probably best to go into the RGB settings on Knulli and tweak the values there to get the desired colour values.
 
 BEWARE: The longer the file, the longer it will take your game to load... I think. So delete games or keywords that you don't use.
