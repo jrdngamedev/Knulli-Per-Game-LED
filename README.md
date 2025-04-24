@@ -20,4 +20,17 @@ Copy and paste a section like:
 
 and just change what is between the "" e.g. "Black" to whatever KEYWORD is in your ROM filename and the 10 10 10 (RGB) values to whatever you want. Its probably best to go into the RGB settings on Knulli and tweak the values there to get the desired colour values. Technically speaking should work with all LED supported Knulli devices.
 
+Don't forget to SSH into the device
+
+```
+ssh root@KNULLI.local
+PASSWORD
+```
+
+And set the script to executable
+
+```
+chmod +x scripts/Knulli-Game-Per-LED.sh
+```
+
 BEWARE: The longer the file, the longer it will take your game to load... I think. So delete games or keywords that you don't use.
